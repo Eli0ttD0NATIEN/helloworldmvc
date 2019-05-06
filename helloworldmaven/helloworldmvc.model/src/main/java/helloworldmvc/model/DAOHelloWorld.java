@@ -5,12 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class DAOHelloWorld {
-    private final String  FileName          = "HelloWorld.txt";
+    private final String  FileName          = "C:/Users/1836805/git/helloworldmvc/helloworldmaven/helloworldmvc.model/src/main/java/helloworldmvc/model/HelloWorld.txt";
     private DAOHelloWorld instance          = null;
     private String        helloWorldMessage = null;
 
-    public DAOHelloWorld() {
-
+    public DAOHelloWorld() throws IOException {
+        this.readFile();
     }
 
     public String getHelloWorldMessage() {

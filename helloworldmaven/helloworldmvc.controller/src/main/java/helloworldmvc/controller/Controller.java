@@ -1,5 +1,7 @@
 package helloworldmvc.controller;
 
+import java.io.IOException;
+
 import helloworldmvc.Contract.IModel;
 import helloworldmvc.Contract.IView;
 
@@ -12,7 +14,7 @@ public class Controller {
         this.model = model;
     }
 
-    public void run() {
+    public void run() throws IOException {
         this.view.displayMessage(this.model.getHelloWorld());
     }
 }
