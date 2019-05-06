@@ -7,3 +7,4 @@ public class View implements IView {
         System.out.println(message);
     }
 }
+// oui
